@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        function correct(){
+            sessionStorage.score++;
+        }
+         
+        function incorrect(){
+        }
+    </script>
+</head>
+
+<body>
+    <h1>分数の足し算</h1>
+    <h1>第1問</h1>
+    <img src="1_8.png" height="200px" width="550px"><br>
+    <p>答えをえらんでね。</p>
+    <img src="8_a.png" height="140px" width="120px" button onclick="correct(); this.src='../maru.png'">　　</button>
+    <img src="8_b.png" height="140px" width="120px" button onclick="incorrect(); this.src='../batu.png'">　　</button>
+    <img src="8_c.png" height="140px" width="120px" button onclick="incorrect(); this.src='../batu.png'">　　</button>
+    <img src="8_d.png" height="140px" width="120px" button onclick="incorrect(); this.src='../batu.png'">　　</button>
+
+    <a href="../quiz9/index.html">次へ</a>
+
+</body>
+</html>

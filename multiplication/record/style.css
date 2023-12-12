@@ -7,12 +7,9 @@ html{
 
 a {
 position:absolute;
-top:770px;
-left:650px;
+top:400px;
 }
 
-kakudaimoji{
-position:absolute;
-top:70px;
-left:50px;
+a,a:visited{
+    color: #F0F0F0;
 }

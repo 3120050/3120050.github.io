@@ -16,3 +16,8 @@ position:absolute;
 top:70px;
 left:50px;
 }
+
+a,a:visited{
+    color: #FFFFFF;
+}
+

@@ -1,0 +1,315 @@
+@media screen and(max-width: 480px) {
+    img {
+    border: 0;
+    }
+    }
+@media screen and(min-width: 1280px) {
+    img {
+    border: 1px solid red;
+    }
+}
+
+html{
+	background-color: #F5F5F5;
+	font-family: "UD デジタル 教科書体 NK-B","UD Digi Kyokasho NK-B";
+	
+}
+
+body {
+  background-image: url("character.png");
+  background-repeat: no-repeat;
+  background-size: 380px;
+  background-position: 280px 225px;
+}
+
+.hajimekata {
+	font-size:35px;
+		
+}
+
+.kakudai {
+	font-size:50px;
+}
+
+.kakudaimoji {
+	font-size:35px;
+}
+
+#character_name {
+	font-size:20px;
+	
+	position: relative;
+		top: 15px;
+		left: 325px;
+}
+
+/* リンク訪問後、文字の色が変わらないようにする。 */
+a,a:visited{
+    color: #4585CD;
+}
+
+.balloon{
+		font-size:15px;
+		color: #F5F5F5;
+		
+	position: relative;
+		top: 30px;
+		padding: 10px;
+		width: 285px;
+		height: 100px;
+		background-color: #00552e;
+		border-radius: 10px;
+		box-shadow: 6px 6px 0px 0px #000000;         /* 吹き出し本体の影 */
+}
+
+/* 三角アイコン */
+	.balloon::before{
+		content: '';
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		right: -15px;
+		top: 50px;
+		border-left: 15px solid #000000;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+}
+/* 三角アイコンの影 */
+	.balloon::after{
+		content: '';
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		right: -13px;
+		top: 45px;
+		border-left: 15px solid #00552e;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+}
+
+/* やる気ボタン */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-emergency {
+  position: relative;
+
+  display: block;
+
+  width: 200px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+a.btn-emergency:hover .btn-emergency-top {
+  top: 10px;
+
+  height: 50px;
+}
+
+a.btn-emergency:active .btn-emergency-top {
+  top: 20px;
+
+  height: 40px;
+}
+
+.btn-emergency-top {
+  position: absolute;
+  top: 0;
+  left: 20px;
+
+  width: 160px;
+  height: 60px;
+  margin-top: 30px;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border-radius: 0 0 50% 50%;
+  background: #d62d2d;
+}
+
+.btn-emergency-top:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+
+  width: 160px;
+  height: 60px;
+
+  content: "";
+
+  border-radius: 80px / 30px;
+  background: #ed4c4c;
+}
+
+.btn-emergency-top span {
+  font-size: 38px;
+  font-weight: bold;
+
+  position: absolute;
+  top: -24px;
+  left: 0;
+
+  width: 100%;
+
+  -webkit-transform: scaleY(0.75);
+
+  transform: scaleY(0.75);
+  text-align: center;
+
+  color: #f6a3a3;
+}
+
+.btn-emergency-bottom {
+  position: absolute;
+  top: 38px;
+  left: 0;
+
+  width: 200px;
+  height: 80px;
+
+  border-radius: 100px / 40px;
+  background: #d8e4ea;
+  -webkit-box-shadow: 0 8px 0 #c4cacc;
+  box-shadow: 0 8px 0 #c4cacc;
+}
+
+/* ハンバーガーメニュー */
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #00552e;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+/* メニュー装飾 */
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #F5F5F5;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    color:#f5f5f5;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #F5F5F5;
+    border-right: solid 2px #F5F5F5;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+/* メニュー動かす */
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #00552E;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+/* チェックボックスにチェックがついたら画面に表示 */
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}

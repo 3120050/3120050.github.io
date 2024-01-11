@@ -1,0 +1,22 @@
+html{
+	background-color: #00FF00;
+	font-family: 'ＭＳ Ｐ明朝', serif;	
+	font-size:35px;
+	color: #F0F0F0;
+}
+
+a {
+position:absolute;
+top:770px;
+left:650px;
+}
+
+kakudaimoji{
+position:absolute;
+top:70px;
+left:50px;
+}
+
+a,a:visited{
+    color: #FFFFFF;
+}
